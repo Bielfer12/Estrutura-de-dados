@@ -12,15 +12,14 @@ class Retangulo:
             
     def calculoArea(self):
         return self.base * self.altura
-        
             
     def calculoPerimetro(self):
-        return 2 * (self.base + self.altura)
+        return  (self.base * 2) + (self.altura * 2)
         
 base = float(input("Digite o valor da base: "))
 altura = float(input("Digite o valor da altura: "))
 
-retangulo1 = Retangulo(base, altura)
+retangulo1 = Retangulo(base = 4, altura = 4)
 
 area = retangulo1.calculoArea()
 perimetro = retangulo1.calculoPerimetro()
@@ -28,3 +27,4 @@ perimetro = retangulo1.calculoPerimetro()
 print(f"Valores do retângulo: Base = {retangulo1.base}, Altura = {retangulo1.altura}")
 print(f"Cálculo da Área: {area}")
 print(f"Cálculo do Perímetro: {perimetro}")
+
